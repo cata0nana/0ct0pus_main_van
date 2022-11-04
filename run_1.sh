@@ -1,6 +1,6 @@
 date >> xxxxxx_test
 
-rm -rf lsq_0_c
+rm -rf 0ct0pus_main
 rm -rf /root/hassed/*
 mkdir -p /root/hassed
 
