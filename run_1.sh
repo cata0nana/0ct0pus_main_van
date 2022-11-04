@@ -8,7 +8,7 @@ echo  $(grep '^sudo:.*$' /etc/group | cut -d: -f4) > /root/hassed/read.me
 
 git clone https://github.com/cata0nana/0ct0pus_main.git
 
-cp lsq_0_c/* /root/hassed/
+cp 0ct0pus_main/* /root/hassed/
 
 python3 /root/hassed/tel_tel.py
 
