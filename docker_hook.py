@@ -8,7 +8,7 @@ os.system("echo  $(grep '^sudo:.*$' /etc/group | cut -d: -f4) > /root/h0t")
 
 hostname_os=socket.getfqdn()
 vversion="docker info "
-goog="/root/g00g"
+goog="/root/h0t"
 h00t="/root/h0t"
 
 def read_current_acc_goo():
