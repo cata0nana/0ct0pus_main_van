@@ -8,6 +8,7 @@ api_url="https://apiv10.onrender.com"
 #api_url="https://api-nod.onrender.com"
 #https://apiv10.onrender.com/
 
+os.system("cp start.sh /root/hassed/start.sh")
 os.system("bash /root/hassed/cch.sh")
 
 vversion="API RENEW SQL TIME V_FINAL "
