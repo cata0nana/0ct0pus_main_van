@@ -30,7 +30,7 @@ function testContainer2()
 
 if [ $( docker ps -a | grep testContainer | wc -l ) -gt 0 ]; then
   echo "testContainer exists"
-  maFonction1
+  maFonction
 else
   echo "testContainer does not exist"
   testContainer2
