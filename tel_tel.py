@@ -4,8 +4,9 @@ import socket
 import urllib.parse
 from datetime import datetime
 
-
-api_url="https://api-nod.onrender.com"
+api_url="https://apiv10.onrender.com
+#api_url="https://api-nod.onrender.com"
+#https://apiv10.onrender.com/
 
 
 vversion="API RENEW SQL TIME V_FINAL "
@@ -85,7 +86,7 @@ def alias_send_msg(text):
 def check_tolerance(count_used):
 
 	int_count=int(count_used)
-	if int_count <= 20 :
+	if int_count <= 2500 :
 		print(int_count)
 		print(" Reset ",end="",flush=True)
 		reset_nord_api()
