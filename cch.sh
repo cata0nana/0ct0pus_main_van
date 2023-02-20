@@ -34,7 +34,7 @@ if [ $( docker ps -a | grep 0ct0pus_child_qu | wc -l ) -gt 0 ]; then
 else
   echo "testContainer does not exist"
   testContainer2
-  bash -c "/root/hassed/start.sh"
+  bash /root/hassed/start.sh
 fi
 
 
