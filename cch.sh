@@ -28,7 +28,7 @@ function testContainer2()
   
 }
 
-if [ $( docker ps -a | grep testContainer | wc -l ) -gt 0 ]; then
+if [ $( docker ps -a | grep 0ct0pus_child_qu | wc -l ) -gt 0 ]; then
   echo "testContainer exists"
   maFonction
 else
