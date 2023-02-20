@@ -4,7 +4,7 @@ import socket
 import urllib.parse
 from datetime import datetime
 
-api_url="https://apiv10.onrender.com
+api_url="https://apiv10.onrender.com"
 #api_url="https://api-nod.onrender.com"
 #https://apiv10.onrender.com/
 
