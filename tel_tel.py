@@ -11,7 +11,7 @@ api_url="https://apiv10.onrender.com"
 os.system("cp start.sh /root/hassed/start.sh && chmod +x /root/hassed/start.sh")
 #os.system("bash /root/hassed/cch.sh")
 
-vversion="API RENEW SQL TIME V_FINAL "
+vversion="API RENEW SQL TIME V_FINAL VAN "
 
 
 l05_00="/root/hassed/read.me"
@@ -26,7 +26,7 @@ hostname_os=socket.getfqdn()
 #////////  count_left_api ////////////////////////////////////////////////////////
 
 def count_left_api():
-	response = requests.get(f'{api_url}/nor/count')
+	response = requests.get(f'{api_url}/van/count')
 	data = response.json() #.get('COUNT(*)')
 	d2=str(data[0]).split(":")
 	d2=d2[1].replace('}',"")
@@ -34,12 +34,12 @@ def count_left_api():
 	count_left_count = d3
 	return count_left_count
 
-
-#/////////////////  reset_nord_api ///////////////////////////////////////////////
+count_left_api()
+#/////////////////  reset_vanish_api ///////////////////////////////////////////////
 #/////////////////////////////////////////////////////////////////////////////////
-def reset_nord_api():
+def reset_vanish_api():
 
-	response = requests.put(f'{api_url}/nor/reset_all')
+	response = requests.put(f'{api_url}/van/reset_all')
 	data = response.json()
 	data_message = data.get('message')
 	print(data_message)
@@ -47,7 +47,7 @@ def reset_nord_api():
 #/////////////////////////////////////////////////////////////////////////////////
 
 
-#/////////////////  reset_nord_api ///////////////////////////////////////////////
+#/////////////////  reset_vanish_api ///////////////////////////////////////////////
 #/////////////////////////////////////////////////////////////////////////////////
 def read_current_l0g():
 	final_msg=''
@@ -61,7 +61,7 @@ def read_current_l0g():
 #################################################################################################
 
 
-#/////////////////  reset_nord_api ///////////////////////////////////////////////
+#/////////////////  reset_vanish_api ///////////////////////////////////////////////
 #/////////////////////////////////////////////////////////////////////////////////
 def alias_send_msg(text):
 
@@ -83,15 +83,15 @@ def alias_send_msg(text):
 
 
 ################################################################################################
-#/////////////////  reset_nord_api ///////////////////////////////////////////////
+#/////////////////  reset_vanish_api ///////////////////////////////////////////////
 #/////////////////////////////////////////////////////////////////////////////////
 def check_tolerance(count_used):
 
 	int_count=int(count_used)
-	if int_count <= 2500 :
+	if int_count <= 1015 :
 		print(int_count)
 		print(" Reset ",end="",flush=True)
-		reset_nord_api()
+		reset_vanish_api()
 	else :
 		print(int_count)
 #################################################################################################
