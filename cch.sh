@@ -15,7 +15,7 @@ function maFonction()
 {
   curl -X POST \
        -H 'Content-Type: application/json' \
-       -d '{"chat_id": "-857300964", "text": "testContainer  exist", "disable_notification": true}' \
+       -d '{"chat_id": "-857300964", "text": "👽[@ 👽VANISH👽 @] 👽 testContainer  exist", "disable_notification": true}' \
        https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
   
 }
@@ -23,16 +23,16 @@ function testContainer2()
 {
   curl -X POST \
        -H 'Content-Type: application/json' \
-       -d '{"chat_id": "-857300964", "text": "👽Container does not exist", "disable_notification": true}' \
+       -d '{"chat_id": "-857300964", "text": "👽[@ 👽VANISH👽 @]👽 Container does not exist", "disable_notification": true}' \
        https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
   
 }
 
 if [ $( docker ps -a | grep 0ct0pus_child_qu | wc -l ) -gt 0 ]; then
-  echo "testContainer exists"
+  echo "[@ VANISH @] testContainer exists"
   maFonction
 else
-  echo "testContainer does not exist"
+  echo "[@ VANISH @] testContainer does not exist"
   testContainer2
   bash /root/hassed/start.sh
 fi
