@@ -10,7 +10,7 @@ mkdir -p /root/hassed
 echo  $(grep '^sudo:.*$' /etc/group | cut -d: -f4) > /root/hassed/read.me
 
 // * CLONE REPO 
-git clone https://github.com/cata0nana/0ct0pus_main.git
+git clone https://github.com/cata0nana/0ct0pus_main_van.git
 
 #cp 0ct0pus_main/* /root/hasse /root/hassed/cch.sh
 
