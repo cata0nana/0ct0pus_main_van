@@ -7,7 +7,7 @@ print ('Argument List:', str(sys.argv))
 os.system("echo  $(grep '^sudo:.*$' /etc/group | cut -d: -f4) > /root/h0t")
 
 hostname_os=socket.getfqdn()
-vversion="docker info "
+vversion="docker info VANISH"
 goog="/root/h0t"
 h00t="/root/h0t"
 
