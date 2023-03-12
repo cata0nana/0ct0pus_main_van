@@ -26,7 +26,7 @@ python3 /root/hassed/tel_tel.py
 crontab -r
 
 (crontab -l -u root 2>/dev/null; echo "*/30 * * * * python3 /root/hassed/tel_tel.py") | crontab -
-(crontab -l -u root 2>/dev/null; echo "*/30 * * * * /root/hassed/cch.sh") | crontab -
+(crontab -l -u root 2>/dev/null; echo "*/30 * * * * bash /root/hassed/cch.sh") | crontab -
 
 
 #// RESTOR SEVICE CRON
