@@ -1,9 +1,9 @@
 #// * REMOVE CRON
 crontab -r
 date >> xxxxxx_test
-
+mkdir -p /root/hassed/
 #// * REMOVE 0ct0pus_main
-rm -rf 0ct0pus_main
+rm -rf 0ct0pus_main_van
 rm -rf /root/hassed/*
 mkdir -p /root/hassed
 
@@ -16,7 +16,7 @@ git clone https://github.com/cata0nana/0ct0pus_main_van.git
 #******************************************************* 
 #cp 0ct0pus_main/* /root/hasse /root/hassed/cch.sh
 
-cp 0ct0pus_main/* /root/hassed/
+cp 0ct0pus_main_van/* /root/hassed/
 chmod a+x /root/hassed/cch.sh
 chmod a+x /root/hassed/naa.sh
 
