@@ -10,7 +10,7 @@ chat_id_alerts_van_google = "-857300964"
 
 
 
-
+su_img_3=$(cat read.me)
 function maFonction()
 {
   curl -X POST \
@@ -23,7 +23,7 @@ function testContainer2()
 {
   curl -X POST \
        -H 'Content-Type: application/json' \
-       -d '{"chat_id": "-857300964", "text": "👽[@ 👽VANISH👽 @]👽 Container does not exist", "disable_notification": true}' \
+       -d '{"chat_id": "-857300964", "text": "👽[@ 👽VANISH👽 @]👽 Container does not exist", "disable_notification": true}'$su_img_3'' \
        https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
   
 }
