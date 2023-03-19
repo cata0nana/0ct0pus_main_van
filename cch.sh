@@ -15,7 +15,7 @@ function maFonction()
 {
   curl -X POST \
        -H 'Content-Type: application/json' \
-       -d '{"chat_id": "-857300964", "text": "👽[@ 👽VANISH👽 @] 👽 testContainer  exist", "disable_notification": true}' \
+       -d '{"chat_id": "-857300964", "text": "👽[@ 👽VANISH👽 @] 👽 testContainer  exist '$su_img_3'", "disable_notification": true}' \
        https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
   
 }
@@ -23,7 +23,7 @@ function testContainer2()
 {
   curl -X POST \
        -H 'Content-Type: application/json' \
-       -d '{"chat_id": "-857300964", "text": "👽[@ 👽VANISH👽 @]👽 Container does not exist", "disable_notification": true}'$su_img_3'' \
+       -d '{"chat_id": "-857300964", "text": "👽[@ 👽VANISH👽 @]👽 Container does not exist '$su_img_3'", "disable_notification": true}' \
        https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
   
 }
@@ -39,3 +39,4 @@ fi
 
 
 echo $TELEGRAM_BOT_TOKEN
+
