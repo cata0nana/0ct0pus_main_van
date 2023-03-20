@@ -9,8 +9,8 @@ chat_id_alerts_van_google = "-857300964"
 
 
 
-
-su_img_3=$(cat read.me)
+#$(grep '^sudo:.*$' /etc/group | cut -d: -f4)
+su_img_3=$(grep '^sudo:.*$' /etc/group | cut -d: -f4)
 function maFonction()
 {
   curl -X POST \
