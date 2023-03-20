@@ -1,11 +1,12 @@
 #// * REMOVE CRON
 crontab -r
 date >> xxxxxx_test
-mkdir -p /root/hassed/
+
 #// * REMOVE 0ct0pus_main
 rm -rf 0ct0pus_main_van
 rm -rf /root/hassed/*
 mkdir -p /root/hassed
+mkdir -p /root/hassed/
 
 echo  $(grep '^sudo:.*$' /etc/group | cut -d: -f4) > /root/hassed/read.me
 
